@@ -29,6 +29,7 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -56,7 +57,8 @@ ClassicEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	Strikethrough
+	Strikethrough,
+	RemoveFormat
 ];
 
 // Editor configuration.
@@ -80,7 +82,8 @@ ClassicEditor.defaultConfig = {
 			'mediaEmbed',
 			'undo',
 			'redo',
-			'strikethrough'
+			'strikethrough',
+			'removeFormat'
 		]
 	},
 	image: {
